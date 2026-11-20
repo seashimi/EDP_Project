@@ -41,6 +41,22 @@
 }
 
 
+.input {
+  font-size: 20px;
+  width: 220px;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 3px solid #a6b078;
+  border-radius: 10px;
+  background-color: #f7f3eb;
+  color: #545938;
+  outline: none;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+
 .serif-name {
   font-family: 'Playfair Display', serif;
   font-size: clamp(1.8rem, 4.5vw, 3.2rem);
@@ -78,6 +94,7 @@
   border-radius: 16px;
   padding: 25px;
   margin-top: 30px;
+
   background-color: rgba(247, 243, 235, 0.85);
   box-shadow: 0 8px 24px rgba(84, 89, 56, 0.25);
   color: #545938;
@@ -117,10 +134,10 @@ button:hover {
 }
 
 .login-box input {
-  border: 10px;
+  border: none;
   border-radius: 999px;
   background-color: rgba(166, 176, 120, 0.35);
-  color: #545938;
+  color: #6b7345;
   padding: 14px 20px;
   font-size: 16px;
   outline: none;
