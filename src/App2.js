@@ -21,17 +21,26 @@ function Login() {
     // }
   }
   const actualusername = "admin"
-  const actualpassword = "p4$$w0rD"
-  return (
+  const actualpassword = "seashiewie"
+return (
     <div className="App">
       <div className="App-header">
-        <h1 className='mydiv'>Login Screen</h1>
-        <div className="logindiv">
-          <label>Username</label>
-          <input type="text" onChange={(e)=>{setUsername(e.target.value)}}/>
-          <label>Password</label>
-          <input type="password" onChange={(e)=>{setPassword(e.target.value)}}/>
-          <button onClick={buttonclick}>Login</button>
+        <h1 className="script-title">Hello World.</h1>
+        <h2 className="serif-name">My name is Sofia Paris Arrieta</h2>
+        <h3 className="sub-tagline">This is my first React project</h3>
+
+        <div className="login-box">
+          <input 
+            type="text" 
+            placeholder="Username" 
+            onChange={(e)=>{setUsername(e.target.value)}}
+          />
+          <input 
+            type="password" 
+            placeholder="Password" 
+            onChange={(e)=>{setPassword(e.target.value)}}
+          />
+          <button className="login-btn" onClick={buttonclick}>Login</button>
         </div>
       </div>
     </div>

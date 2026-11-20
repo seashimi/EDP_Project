@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className='mydiv'>{result}</h1>
+        <h1 className="script-title">Calculator</h1>
         <table>
           <tr>
             <button onClick={()=>{thisclick(7)}}>7</button>

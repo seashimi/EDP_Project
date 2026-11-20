@@ -2,7 +2,7 @@ import './App.css';
 import {useState} from 'react';
 
 function Home() {
-  const myname = "AJ Megriño";
+  const myname = "Sofia Paris Arrieta";
   const myintro = "This is my first React project"
   const [myvalue, setMyvalue] = useState(0)
   const plusone = () => {
@@ -15,11 +15,10 @@ function Home() {
       setMyvalue(myvalue - 1)
     }
   }
-  return (
+ return (
     <div className="App">
       <header className="App-header">
-        <h1>Hello World. My name is {myname}</h1>
-        <h3>{myintro}</h3>
+        <h1 className="script-title">Counter Card </h1> 
         <div className="mydiv">
           <h3>The value of x is {myvalue}</h3>
           <button onClick={plusone}>+1</button>

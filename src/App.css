@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@700;900&family=Plus+Jakarta+Sans:wght@400;600&display=swap');
 .App {
   text-align: center;
 }
@@ -14,20 +15,55 @@
 }
 
 .App-header {
-  background-color: #1c82ad;
+  background-color: #f6ebe6;
+  background-image: radial-gradient(circle at 20% 75%, #f3a6b8 0%, #f7d5dc 45%, #f7f3eb 88%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #7d8652;
+}
+
+
+.script-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(4.5rem, 9.5vw, 7rem);
+  font-weight: 400;
+  color: #ea889f;
+  margin: 0;
+  line-height: 0.85;
+  text-shadow: none;
+  position: relative;
+  z-index: 2;
+}
+
+
+.serif-name {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 4.5vw, 3.2rem);
+  font-weight: 900;
+  color: #a6b078;
+  margin: -18px 0 24px 0;
+  letter-spacing: -0.5px;
+  position: relative;
+  z-index: 1;
+}
+
+.sub-tagline {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #839e0a;
+  margin: 0 0 24px 0;
+  text-shadow: none;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #ea889f;
 }
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,23 +72,136 @@
     transform: rotate(360deg);
   }
 }
+
 .mydiv, table {
-  border: 5px solid #000000;
-  border-radius: 10px;
+  border: 4px solid #a6b078;
+  border-radius: 16px;
   padding: 25px;
+  margin-top: 30px;
+  background-color: rgba(247, 243, 235, 0.85);
+  box-shadow: 0 8px 24px rgba(84, 89, 56, 0.25);
+  color: #545938;
 }
-/* button {
-  border: 2px solid #000000;
-  border-radius: 5px;
-  background-color: yellowgreen;
-  color: black;
-  padding: 10px;
-  width: 50px;
-  height: 75px;
-  font-size: 25px;
-  font-weight:bold;
-} */
+
+button {
+  border: 2px solid #a6b078;
+  border-radius: 999px;
+  background-color: #f7f3eb;
+  color: #7d8652;
+  padding: 8px 18px;
+  margin: 4px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
 button:hover {
-  background-color: #0c4c68;
+  background-color: #ea889f;
+  border-color: #ea889f;
   color: white;
+}
+
+.login-box {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  gap: 14px;
+}
+
+.login-title {
+  font-family: 'Playfair Display', serif;
+  color: #7d8652;
+  margin-bottom: 100px;
+}
+
+.login-box input {
+  border: 10px;
+  border-radius: 999px;
+  background-color: rgba(166, 176, 120, 0.35);
+  color: #545938;
+  padding: 14px 20px;
+  font-size: 16px;
+  outline: none;
+}
+
+.login-box input::placeholder {
+  color: #6b7345;
+}
+
+.forgot {
+  text-align: left;
+  font-size: 14px;
+  color: #7d8652;
+  margin: -4px 0 4px 12px;
+}
+
+.login-btn {
+  border: none;
+  border-radius: 999px;
+  background-color: #f7f3eb;
+  color: #545938;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #ea889f;
+  color: white;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 30px;
+  background-color: #dde7cd;
+  border-bottom: 3px solid #a6b078;
+  backdrop-filter: blur(8px);
+  z-index: 100;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-brand {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  color: #ea889f;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #7d8652;
+  padding: 6px 16px;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: #ea889f;
+  color: #ffffff;
 }
