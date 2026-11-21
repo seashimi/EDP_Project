@@ -5,6 +5,7 @@ import Nav from './Nav';
 import Home from './App';
 import Calculator from './App1';
 import Login from './App2';
+import AboutMe from './AboutMe';
 
 const NavbarLayout = () => (
   <>
@@ -21,6 +22,7 @@ function App3() {
           <Route path="/" element={<Login />} />
           <Route path="/home" element={<Home />} />
           <Route path="/calculator" element={<Calculator />} />
+          <Route path="/aboutme" element={<AboutMe />} />
         </Route>
       </Routes>
     </Router>
